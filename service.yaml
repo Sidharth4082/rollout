@@ -6,6 +6,7 @@ spec:
   type: LoadBalancer
   ports: 
    - protocol: TCP
-     port: 5005
-     targetPort: 5005
-  selector: nginx
+     port: 8083
+     targetPort: 8083
+  selector:
+    app: html
